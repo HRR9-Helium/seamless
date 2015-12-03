@@ -216,6 +216,7 @@
 
 
   function onButtonClick(e) {
+
     targetWidth = inputWidth.value;
     targetHeight = inputHeight.value;
 
@@ -361,6 +362,11 @@
 
   // Saving functions
   function saveToFirebase(imageData) {
+    var savedCanvas = document.querySelector('canvas');
+    
+    if(savedCanvas === canvas){
+      console.log('Cant save image')
+    } else {
       var pic = ref.child('pics');
       var imagePng = canvas.toDataURL('image/png')
       
@@ -376,6 +382,7 @@
           });
         };
       });
+    };
   };
 
   function onUndoClick() {
