@@ -19,11 +19,11 @@ function deleteBtn(e) {
       imageData.src = snapObj[key]['pic'];
       var imageSource = '<div class="card-medium">' +
       '<div class="card-image firebaseImage center">' +
-        '<img src= '+ imageData.src +' />' +
-      '</div>' +
+          '<img src= '+ imageData.src +' />' +
+        '</div>' +
         '</div class="card-action">' +
           '<p class="waves-effect waves-light btn right" id="' + key + '"onClick="deleteBtn(this.id)">Delete</p>' +
-        '</div>' +
+        '</div>'
       '</div>'
 
       var imageTemplate = Handlebars.compile(imageSource);
