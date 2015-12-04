@@ -17,7 +17,7 @@ function deleteBtn(e) {
       var imageData = new Image();
 
       imageData.src = snapObj[key]['pic'];
-      var imageSource = '<div class="card-small right">' +
+      var imageSource = '<div class="card small right">' +
       '<div class="card-image firebaseImage center">' +
           '<img src= '+ imageData.src +' />' +
         '</div>' +
