@@ -17,7 +17,7 @@ function deleteBtn(e) {
       var imageData = new Image();
 
       imageData.src = snapObj[key]['pic'];
-      var imageSource = '<div class="card">' +
+      var imageSource = '<div class="card hoverable">' +
         '<div class="card-image firebaseImage">' +
           '<img src= '+ imageData.src +' />' +
         '</div>' + '<p class="btn" id="' + key + '"onClick="deleteBtn(this.id)">Delete</p>' +
