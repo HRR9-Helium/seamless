@@ -4,8 +4,7 @@
   "description": "seam-carving application",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js", 
-    "postinstall": "grunt build"
+    "start": "node index.js"
   },
   "engines":{
     "node":"0.12.7",
