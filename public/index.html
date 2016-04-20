@@ -38,40 +38,37 @@
 <!------------ App card ------------>
           <div class="card hoverable">
             <div class="row card-image waves-effect waves-block waves-light center">
-              <canvas></canvas>
+              
             </div>
 
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+              <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_info</i></span>
               <form action="#">
-
-                <label>Height</label>
-                <div class="row">
-
-                  <div class="col m7 l7">
-                    <p class="range-field">
-                      <input type="range" name='points' id="slider-vertical" min="0" max="100" value="100" />
-                    </p>
-                  </div>
-
-                  <div class="col m2 l2">
-
+              <table>
+                <tbody>
+                  <tr>
+                    <td><canvas></canvas></td>
+                    <td>
+                      <p class="vertical">
+                        <input type="range" name='points' id="slider-vertical" min="0" max="100" value="100" style="transform: translateX(-50%) rotate(270deg);"/>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p class="range-field">
+                        <input type="range" name='points' id="slider-horizontal" min="0" max="100" value="100" />
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                  <td>
                     <input id="input-height" type="number" style="margin-top: -40px;">
-                  </div>
-
-                </div>
-                <label>Width</label>
-                <div class="row">
-                  <div class="col m7 l7">
-                    <p class="range-field">
-                      <input type="range" name='points' id="slider-horizontal" min="0" max="100" value="100" />
-                    </p>
-                  </div>
-                  <div class="col m2 l2">
                     <input id="input-width" type="number" style="margin-top: -40px;">
-                  </div>
-                </div>
-
+                  </td>
+                  </tr>
+                </tbody>
+              </table>
               </form>
 
               <div class="card-action">
@@ -113,7 +110,7 @@
   <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
   <script src="js/auth.js"></script>
   <script src="js/add-image.js"></script>
-  <script src="dist/Seamless.js"></script>
+  <script src="js/Seamless.js"></script>
   <!--hamburger menu hack -->
   <script>
     (function($){
