@@ -4,11 +4,12 @@
   "description": "seam-carving application",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js", 
+    "postinstall": "grunt build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HRR9-Helium/seamless.git"
+    "url": "https://github.com/HRR9-Helium/seamless.git"
   },
   "author": "",
   "license": "ISC",
